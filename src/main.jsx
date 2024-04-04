@@ -26,6 +26,9 @@ const router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog> </Blog>,
+        loader: async () => {
+          return fetch(`/news.json`);
+        },
       },
       {
         path: "/contact",
