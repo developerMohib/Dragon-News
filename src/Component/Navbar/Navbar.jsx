@@ -4,14 +4,14 @@ const Navbar = () => {
     return (
         <div className="flex justify-between">
             <div>
-            <NavLink to='/' > Home </NavLink>
-            <NavLink to='/blog' > Blog</NavLink>
-            <NavLink to='/contact' >Contact</NavLink>
+            <NavLink className={( {isActive} )=> isActive ? 'underline mx-2' : 'mx-2' } to='/' > Home </NavLink>
+            <NavLink className={( {isActive} )=> isActive ? 'underline mx-2' : 'mx-2' } to='/blog' > Blog</NavLink>
+            <NavLink className={( {isActive} )=> isActive ? 'underline mx-2' : 'mx-2' } to='/contact' >Contact</NavLink>
             </div>
 
             <div>
-            <NavLink to='/login' > Log In </NavLink>
-            <NavLink to='/register' > Register </NavLink>
+            <NavLink className={( {isActive} )=> isActive ? 'underline mx-2' : 'mx-2' } to='/login' > Log In </NavLink>
+            <NavLink className={( {isActive} )=> isActive ? 'underline mx-2' : 'mx-2' } to='/register' > Register </NavLink>
             </div>
         </div>
     );
