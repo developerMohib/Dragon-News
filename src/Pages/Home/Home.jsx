@@ -16,7 +16,7 @@ const Home = () => {
       .then((res) => res.json())
       .then((data) => setNews(data));
   }, []);
-  console.log(news);
+  // console.log(news);
   return (
     <div>
       <Header> </Header>
@@ -91,8 +91,7 @@ const Home = () => {
                       className="object-cover w-full mb-4 h-60 sm:h-96 dark:bg-gray-500"
                     />
                     <p className="text-sm dark:text-gray-600">
-                      {" "}
-                      {sNews.details}{" "}
+                      {sNews.details.slice(0,200)}....  <Link to={`/news/${sNews._id}`} className="text-green-400 hover:text-red-400 font-semibold " >Read More</Link>
                     </p>
                   </div>
                   <div className="flex flex-wrap justify-between">

@@ -12,13 +12,6 @@ const Navbar = () => {
     </NavLink>
     <NavLink
       className={({ isActive }) => (isActive ? "underline mx-2" : "mx-2")}
-      to="/blog"
-    >
-      {" "}
-      Blog
-    </NavLink>
-    <NavLink
-      className={({ isActive }) => (isActive ? "underline mx-2" : "mx-2")}
       to="/contact"
     >
       Contact
